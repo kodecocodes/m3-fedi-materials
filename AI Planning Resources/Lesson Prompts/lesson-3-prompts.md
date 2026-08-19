@@ -18,7 +18,7 @@ Draft development plan:
 [Paste your draft-development-plan.md content here]
 
 Existing app context:
-Tokens Dashboard is a small SwiftUI app with a summary screen and detail chart screens. It uses fixed mock data for model cost, developer outcomes, and ticket-to-merge trends. Module 3 is planning only, not implementation.
+Tokens Dashboard is a small SwiftUI app with a summary screen and detail chart screens. It uses fixed mock data for model cost, developer outcomes, and ticket-to-merge trends. This exercise focuses on producing and reviewing a development plan. Do not implement the feature or write production code.
 
 Look for:
 - Weak assumptions
@@ -102,4 +102,3 @@ Return a revised plan using this structure:
 15. Open questions
 16. Final status
 ```
-
