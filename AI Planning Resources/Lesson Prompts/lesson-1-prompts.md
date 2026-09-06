@@ -14,6 +14,16 @@ These prompts are longer than a quick chat message on purpose. Planning prompts 
 
 You can use these prompts with any capable AI assistant, including ChatGPT, Claude, Gemini, Cursor, Codex, or another tool that can work with project context and Markdown. The exact wording of the response will vary by tool and model.
 
+## How to use these prompts
+
+The prompts below are complete and ready to paste into your AI tool. You do not need to configure a custom agent, install a skill, or attach the separate role-review files.
+
+The `product-lead-review.md`, `designer-review.md`, and `engineering-manager-review.md` files are reusable reference guides. Each prompt below already adapts the appropriate guide with the Tokens Dashboard context, feature constraints, review focus, and requested response format.
+
+After each AI review, decide which suggestions you accept, reject, or want revised, and state those decisions in the conversation. The review responses are input, not the finished feature brief. After all three reviews, use Prompt 4 to create the complete `feature-brief.md` from your approved decisions.
+
+Run all four prompts in the same conversation so Prompt 4 can use the preceding reviews and your decisions. The `feature-plan-template.md` and `human-review-checklist.md` files are used in later lessons, not in Lesson 1.
+
 ## Prompt 1: Product Lead Review
 
 ```text
@@ -144,3 +154,50 @@ Return:
 Do not write the implementation. Keep the plan compatible with the existing app unless there is a clear reason to change the architecture.
 ```
 
+## Prompt 4: Create the Feature Brief
+
+Run this prompt after completing the product lead, designer, and engineering manager reviews. Before using it, make sure you have stated which recommendations you accept, reject, or want revised after each review.
+
+```text
+Using the product lead, designer, and engineering manager reviews from this conversation, create the complete content for a file named `feature-brief.md`.
+
+The decisions I made after each review override any earlier AI recommendations.
+
+Rules:
+- Include only ideas and recommendations I accepted.
+- Do not reintroduce anything I rejected.
+- Preserve unresolved decisions as open questions.
+- Keep the feature team-level.
+- Do not include individual developer names.
+- Do not add runtime LLM calls, networking, authentication, persistence, or backend services.
+- Do not claim that AI usage caused delivery improvements.
+- Do not make pricing or premium-model assumptions.
+- Do not include implementation code.
+- Keep the feature scoped to a small, realistic version 1.
+
+Use this structure:
+
+# Feature Brief: AI Usage Insights
+
+## Feature name
+
+## Rough idea
+
+## Audience
+
+## Problem statement
+
+## UI direction
+
+## Version 1 scope
+
+## Non-goals
+
+## Initial insight candidates
+
+## Human-review constraints
+
+## Open questions
+
+Return only the complete Markdown content for `feature-brief.md`, without introductory commentary.
+```
