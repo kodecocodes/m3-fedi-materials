@@ -4,7 +4,9 @@ Use these prompts during Lesson 3. Start with the `feature-brief.md` and `draft-
 
 ## Prompting note
 
-This lesson uses an independent adversarial review. If possible, run Prompt 1 in a fresh AI chat or session. Do not include the full planning conversation from Lessons 1 and 2. The reviewer should critique the current artifacts, not continue the original conversation.
+This lesson uses an independent adversarial review. If possible, run all three prompts in a fresh AI chat or session. Do not include the full planning conversation from Lessons 1 and 2. The reviewer should critique the current artifacts, not continue the original conversation.
+
+Paste the two starting artifacts into Prompt 1. After receiving the review, state which findings you accept, reject, want revised, or want to investigate later. Prompt 2 creates `adversarial-review-notes.md` from that review and your decisions. Prompt 3 then creates the complete `reviewed-feature-plan.md`. Keep all three prompts and your review decisions in the same fresh conversation.
 
 ## Prompt 1: Adversarial Plan Review
 
@@ -63,42 +65,123 @@ Return findings in this format:
 Do not rewrite the full plan. Critique it first. The human reviewer will decide what to accept, reject, or investigate later.
 ```
 
-## Prompt 2: Apply Accepted Review Decisions
+## Prompt 2: Create the Adversarial Review Notes
 
 ```text
-Update this draft development plan using only the accepted human review decisions below.
+Using the adversarial review and my decisions from this conversation, create the complete contents of a file named `adversarial-review-notes.md`.
 
-Draft development plan:
-[Paste your draft-development-plan.md content here]
-
-Accepted decisions:
-[Paste the decisions you accepted from adversarial-review-notes.md]
+My decisions stated during the conversation override the AI review.
 
 Rules:
-- Do not add new scope beyond the accepted decisions.
+- Record which findings I accepted, rejected, revised, deferred, or chose to investigate later.
+- Do not invent decisions I did not make.
+- Preserve unresolved findings instead of silently deciding them.
+- Keep the distinction between must-fix issues, suggestions, and acceptable tradeoffs.
+- Keep the notes concise but specific enough to explain why each decision was made.
+
+Use this structure:
+
+# Adversarial Review Notes: AI Usage Insights
+
+## Review context
+
+## Must fix
+
+For each finding, include:
+- Finding
+- Why it matters
+- Suggested change
+- Human decision
+
+## Should consider
+
+For each finding, include:
+- Finding
+- Why it matters
+- Suggested change
+- Human decision
+
+## Acceptable tradeoffs
+
+For each tradeoff, include:
+- Tradeoff
+- Why it may be acceptable
+- What to watch during implementation
+- Human decision
+
+## Final triage summary
+
+### Accepted changes
+
+### Rejected changes
+
+### Investigate later
+
+### Decisions requiring stakeholder approval
+
+If your environment supports file creation, create or update `adversarial-review-notes.md`. Otherwise, return only the complete Markdown content without introductory commentary.
+```
+
+## Prompt 3: Create the Reviewed Feature Plan
+
+Run this prompt after checking `adversarial-review-notes.md` and correcting anything that does not accurately reflect your decisions.
+
+```text
+Using the feature brief, draft development plan, adversarial review, adversarial review notes, and my decisions from this conversation, create the complete contents of a file named `reviewed-feature-plan.md`.
+
+My decisions stated during the conversation override earlier AI recommendations.
+
+Rules:
+- Apply only findings and recommendations I accepted.
+- Do not reintroduce anything I rejected.
+- Clearly identify anything deferred from version 1.
+- Preserve unresolved decisions under Open Questions.
 - Keep the feature team-level.
 - Do not expose individual developer names in insight cards.
-- Do not add runtime AI calls.
+- Use deterministic local insight rules.
+- Do not add runtime LLM calls.
 - Do not add networking, persistence, authentication, or a backend.
+- Do not add a tab bar or per-insight detail screens.
 - Do not claim that AI caused delivery improvements.
 - Do not classify models as premium, standard, or cheap.
-- Keep unresolved questions clearly marked.
+- Do not include implementation code.
+- Keep the plan scoped to a small, realistic version 1.
 
-Return a revised plan using this structure:
-1. Feature summary
-2. Audience
-3. Goals
-4. Non-goals
-5. User flow
-6. UI plan
-7. Proposed Swift surface
-8. Proposed files
-9. Data flow
-10. Final v1 insight rules
-11. Deferred from v1
-12. Edge cases
-13. Accessibility requirements
-14. Acceptance criteria
-15. Open questions
-16. Final status
+Use this structure:
+
+# Reviewed Feature Plan: AI Usage Insights
+
+## Feature summary
+
+## Audience
+
+## Goals
+
+## Non-goals
+
+## User flow
+
+## UI plan
+
+## Proposed Swift surface
+
+## Proposed files
+
+## Data flow
+
+## Final version 1 insight rules
+
+## Deferred from version 1
+
+## Edge cases
+
+## Accessibility requirements
+
+## Acceptance criteria
+
+## Open questions
+
+## Final status
+
+If your environment supports file creation, create or update `reviewed-feature-plan.md`. Otherwise, return only the complete Markdown content without introductory commentary.
 ```
