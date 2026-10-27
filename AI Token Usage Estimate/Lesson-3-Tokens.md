@@ -1,6 +1,6 @@
 # Lesson 3 Token Record
 
-These are estimated prompt and response token counts, matching the reporting style used in the earlier `Feature Development Plan` task. They cover user-facing prompts and generated response content for this adversarial-review session; they do not include hidden reasoning, tool activity, or system context. Estimated costs prices are in USD as of September 2026, for GPT-5.6 Terra model.
+These are estimated prompt and response token counts, matching the reporting style used in the earlier `Feature Development Plan` task. They cover user-facing prompts and generated response content for this adversarial-review session; they do not include hidden reasoning, tool activity, or system context. The estimated costs are for GPT-5.6 Terra model. Costs will vary depending on the model used. The estimated costs use pay-as-you-go API prices in USD as of October 2026. If you use a ChatGPT subscription plan, your usage counts against the plan's allowance instead.
 
 | Prompt / Response | Prompt Tokens | Response Tokens | Total Tokens |
 | --- | ---: | ---: | ---: |

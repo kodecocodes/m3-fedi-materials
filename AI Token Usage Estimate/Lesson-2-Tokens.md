@@ -9,7 +9,7 @@
 
 ## Notes
 
-These are conversational estimates, not exact billing or model telemetry. They cover the visible development-plan prompts and responses in this lesson, including the corrected plan-file work. They exclude hidden system instructions, tool payloads, and platform overhead. Estimated costs prices are in USD as of September 2026, for GPT-5.6 Terra model.
+These are conversational estimates, not exact billing or model telemetry. They cover the visible development-plan prompts and responses in this lesson, including the corrected plan-file work. They exclude hidden system instructions, tool payloads, and platform overhead. The estimated costs are for GPT-5.6 Terra model. Costs will vary depending on the model used. The estimated costs use pay-as-you-go API prices in USD as of October 2026. If you use a ChatGPT subscription plan, your usage counts against the plan's allowance instead.
 
 ## Estimated Turn Totals
 
