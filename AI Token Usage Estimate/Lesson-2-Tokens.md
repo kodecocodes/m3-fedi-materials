@@ -5,7 +5,7 @@
 - Input tokens: approximately 750
 - Output tokens: approximately 3,800
 - Total estimated tokens: approximately 4,550
-- - Total estimated cost: approximately $0.05
+- Total estimated cost: approximately $0.05
 
 ## Notes
 
