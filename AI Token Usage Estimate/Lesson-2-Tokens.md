@@ -4,11 +4,12 @@
 
 - Input tokens: approximately 750
 - Output tokens: approximately 3,800
-- Total tokens: approximately 4,550
+- Total estimated tokens: approximately 4,550
+- - Total estimated cost: approximately $0.05
 
 ## Notes
 
-These are conversational estimates, not exact billing or model telemetry. They cover the visible development-plan prompts and responses in this lesson, including the corrected plan-file work. They exclude hidden system instructions, tool payloads, and platform overhead.
+These are conversational estimates, not exact billing or model telemetry. They cover the visible development-plan prompts and responses in this lesson, including the corrected plan-file work. They exclude hidden system instructions, tool payloads, and platform overhead. Estimated costs prices are in USD as of September 2026, for GPT-5.6 Terra model.
 
 ## Estimated Turn Totals
 
@@ -21,4 +22,5 @@ These are conversational estimates, not exact billing or model telemetry. They c
 | Removal of intermediate plan file | 20 | 20 | 40 |
 | Draft development plan creation | 250 | 1,400 | 1,650 |
 | Token-record request and save | 14 | 26 | 40 |
-| **Estimated total** | **754** | **3,816** | **4,570** |
+| **Estimated total tokens** | **754** | **3,816** | **4,570** |
+| **Estimated total cost**   |         |           | **$0.05** |
