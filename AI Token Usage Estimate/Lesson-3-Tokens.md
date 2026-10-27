@@ -12,7 +12,7 @@ These are estimated prompt and response token counts, matching the reporting sty
 
 ## Estimated Lesson Totals
 
-~7,840 tokens
+~7,840 tokens  
 ~$0.08
 
 ## Per-Response Reporting Style
