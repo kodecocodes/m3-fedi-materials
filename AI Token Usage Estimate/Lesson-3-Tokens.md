@@ -1,6 +1,6 @@
 # Lesson 3 Token Record
 
-These are estimated prompt and response token counts, matching the reporting style used in the earlier `Feature Development Plan` task. They cover user-facing prompts and generated response content for this adversarial-review session; they do not include hidden reasoning, tool activity, or system context.
+These are estimated prompt and response token counts, matching the reporting style used in the earlier `Feature Development Plan` task. They cover user-facing prompts and generated response content for this adversarial-review session; they do not include hidden reasoning, tool activity, or system context. Estimated costs prices are in USD as of September 2026, for GPT-5.6 Terra model.
 
 | Prompt / Response | Prompt Tokens | Response Tokens | Total Tokens |
 | --- | ---: | ---: | ---: |
@@ -10,9 +10,10 @@ These are estimated prompt and response token counts, matching the reporting sty
 | Create `reviewed-feature-plan.md` | ~300 | ~2,850 | ~3,150 |
 | Create this Lesson 3 token record | ~70 | ~300 | ~370 |
 
-## Estimated Lesson Total
+## Estimated Lesson Totals
 
 ~7,840 tokens
+~$0.08
 
 ## Per-Response Reporting Style
 
