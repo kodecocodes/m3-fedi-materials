@@ -1,14 +1,15 @@
 # Lesson 1 Token Usage
 
-## Estimated Total
+## Estimated Totals
 
 - Input tokens: approximately 1,200
 - Output tokens: approximately 3,600
-- Total tokens: approximately 4,800
+- Total estimated tokens: approximately 4,800
+- Total estimated cost: approximately $0.05
 
 ## Notes
 
-These are conversational estimates, not exact billing or model telemetry. They cover the visible lesson prompts and responses, including creation of the feature brief and this token record. They exclude hidden system instructions, tool payloads, and other platform overhead.
+These are conversational estimates, not exact billing or model telemetry. They cover the visible lesson prompts and responses, including creation of the feature brief and this token record. They exclude hidden system instructions, tool payloads, and other platform overhead. Estimated costs prices are in USD as of September 2026, for GPT-5.6 Terra model.
 
 ## Estimated Turn Totals
 
@@ -25,4 +26,5 @@ These are conversational estimates, not exact billing or model telemetry. They c
 | Feature brief creation | 190 | 1,150 | 1,340 |
 | Feature brief file save | 15 | 20 | 35 |
 | Token-record request and save | 29 | 31 | 60 |
-| **Estimated total** | **1,200** | **3,595** | **4,795** |
+| **Estimated total tokens** | **1,200** | **3,595** | **4,795** |
+| **Estimated total cost**   |           |           |  **0.05** |
